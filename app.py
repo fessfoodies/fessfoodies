@@ -16,7 +16,7 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    if "foodies!" or "Foodies!" in message:
+                    if "foodies!" in message:
                         #message = message.replace("foodies", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
