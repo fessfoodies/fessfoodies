@@ -33,7 +33,7 @@ def start():
                             print("DM deleted because its empty..")
                             tw.delete_dm(id)
                             #delete dm here
-                    else if "Foodies!" in message:
+                    elif "Foodies!" in message:
                         #message = message.replace("foodies", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
