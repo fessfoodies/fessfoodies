@@ -2,6 +2,7 @@ from twitter import Twitter
 import time
 
 #ubah dikit
+#ubah dikitlagi lah
 tw = Twitter()
 
 def start():
