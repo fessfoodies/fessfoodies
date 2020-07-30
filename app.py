@@ -16,30 +16,7 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    if "foodies!" in message:
-                        #message = message.replace("foodies", "")
-                        if len(message) is not 0:
-                            if dms[i]['media'] is None:
-                                print("DM will be posted")
-                                tw.post_tweet(message)
-                                tw.delete_dm(id)
-                                #post tweet here
-                            else:
-                                print("DM will be posted with media")
-                                tw.post_tweet_with_media(message, dms[i]['media'])
-                                tw.delete_dm(id)
-
-                        else:
-                            print("DM deleted because its empty..")
-                            tw.delete_dm(id)
-                            #delete dm here
-
-#                     else:
-#                         print("DM will be deleted because does not contains keyword..")
-#                         tw.delete_dm(id)
-#                         #delete dm
-                        
-                    elif "Foodies!" in message:
+                    if "foodies!" or "Foodies!" in message:
                         #message = message.replace("foodies", "")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
@@ -60,7 +37,7 @@ def start():
                     else:
                         print("DM will be deleted because does not contains keyword..")
                         tw.delete_dm(id)
-                        #delete dm    
+                        #delete dm
             dms = list()
 
         else:
