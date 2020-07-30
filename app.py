@@ -34,10 +34,10 @@ def start():
                             tw.delete_dm(id)
                             #delete dm here
 
-                    else:
-                        print("DM will be deleted because does not contains keyword..")
-                        tw.delete_dm(id)
-                        #delete dm
+#                     else:
+#                         print("DM will be deleted because does not contains keyword..")
+#                         tw.delete_dm(id)
+#                         #delete dm
                         
                     elif "Foodies!" in message:
                         #message = message.replace("foodies", "")
